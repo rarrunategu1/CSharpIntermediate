@@ -33,8 +33,17 @@ namespace ClassesAndObjects
             customer.Orders.Add(order);
 
             Console.WriteLine(customer.Id);
-            Console.WriteLine(customer.Name);   
+            Console.WriteLine(customer.Name);
          }
+
+         static void UseParams()
+         {
+            //method overloading in Calculator.cs
+            var calculator = new Calculator();
+            Console.WriteLine(calculator.Add(1, 2));
+            Console.WriteLine(calculator.Add(1, 2, 3));
+            Console.WriteLine(calculator.Add(new int[]{1, 2, 3, 4}));
+        }
 
         //methods on Point.cs
         //overloading

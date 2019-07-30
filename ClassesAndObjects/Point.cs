@@ -5,7 +5,7 @@ using System.Text;
 namespace ClassesAndObjects
 {
     //practice with Methods
-    class Point
+    public class Point
     {   
         //set fields
         public int X;
