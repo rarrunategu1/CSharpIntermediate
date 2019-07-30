@@ -24,6 +24,10 @@ namespace ClassesAndObjects
         {
             Person person = Person.Parse("Alex");
             person.Introduce("Bill");
+
+            Customer customer = new Customer(1, "Shawn");
+            Console.WriteLine(customer.Id);
+            Console.WriteLine(customer.Name);
         }
     }
 }
