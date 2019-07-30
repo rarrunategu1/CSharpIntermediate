@@ -34,6 +34,21 @@ namespace ClassesAndObjects
 
             Console.WriteLine(customer.Id);
             Console.WriteLine(customer.Name);
+
+            //using Out Modifier
+            //var number = int.Parse("abc");
+            //returns exception - input string is not in correct format
+            //can be fixed with try catch block or the following:
+            int number;
+            var result = int.TryParse("abc", out number);
+            if (result)
+            {
+                Console.WriteLine(number);
+            }
+            else
+            {
+                Console.WriteLine("Conversion failed.");
+            }
          }
 
          static void UseParams()
