@@ -26,6 +26,10 @@ namespace ClassesAndObjects
             person.Introduce("Bill");
 
             Customer customer = new Customer(1, "Shawn");
+            
+            var order = new Order();
+            customer.Orders.Add(order);
+            
             Console.WriteLine(customer.Id);
             Console.WriteLine(customer.Name);
         }
