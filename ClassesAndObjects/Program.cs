@@ -29,8 +29,8 @@ namespace ClassesAndObjects
             //constructors on Customer.cs and Order.cs
             Customer customer = new Customer(1, "Shawn");
             
-            var order = new Order();
-            customer.Orders.Add(order);
+            //var order = new Order();
+            //customer.Orders.Add(order);
 
             Console.WriteLine(customer.Id);
             Console.WriteLine(customer.Name);
@@ -49,6 +49,16 @@ namespace ClassesAndObjects
             {
                 Console.WriteLine("Conversion failed.");
             }
+
+            //readonly modifier example
+            var readonlycustomer = new ReadOnlyCustomer(1);
+            readonlycustomer.Orders.Add(new Order());
+            readonlycustomer.Orders.Add(new Order());
+
+            //because we initialize the list here again we lose all of the data and it becomes zero
+            readonlycustomer.Promote();
+
+            Console.WriteLine(readonlycustomer.Orders.Count);
          }
 
          static void UseParams()
