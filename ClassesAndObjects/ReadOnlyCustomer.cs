@@ -10,7 +10,7 @@ namespace ClassesAndObjects
         //fields
         public int Id;
         public string Name;
-        public List<Order> Orders = new List<Order>();
+        public readonly List<Order> Orders = new List<Order>();
 
         //constructors
         public ReadOnlyCustomer(int id)
@@ -25,7 +25,6 @@ namespace ClassesAndObjects
         //using ReadOnly Modifier
         public void Promote()
         {
-            Orders = new List<Order>();
         }
     }
 }
