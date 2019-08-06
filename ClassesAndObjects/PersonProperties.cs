@@ -6,7 +6,11 @@ namespace ClassesAndObjects
 {
     public class PersonProperties
     {
-        public DateTime Birthdate{ get; set; }
+        public PersonProperties(DateTime birthdate)
+        {
+            Birthdate = birthdate;
+        }
+        public DateTime Birthdate{ get; private set; }
 
         public int Age
         {
