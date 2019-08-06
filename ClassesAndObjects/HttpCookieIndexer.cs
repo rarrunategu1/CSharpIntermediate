@@ -8,7 +8,7 @@ namespace ClassesAndObjects
     class HttpCookieIndexer
     {
         private readonly Dictionary<string, string> _dictionary;
-
+        public DateTime Expiration { get; set; }
         public HttpCookieIndexer()
         {
             _dictionary = new Dictionary<string, string>();
