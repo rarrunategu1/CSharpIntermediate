@@ -59,6 +59,12 @@ namespace ClassesAndObjects
             readonlycustomer.Promote();
 
             Console.WriteLine(readonlycustomer.Orders.Count);
+
+            //PersonAccessModifier Practice
+            PersonAccessModifier personEx = new PersonAccessModifier();
+            personEx.SetBirthdate(new DateTime(1982, 1, 1));
+            Console.WriteLine(personEx.GetBirthdate());
+
          }
 
          static void UseParams()
