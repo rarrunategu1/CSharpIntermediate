@@ -65,6 +65,11 @@ namespace ClassesAndObjects
             personEx.SetBirthdate(new DateTime(1982, 1, 1));
             Console.WriteLine(personEx.GetBirthdate());
 
+            //PersonProperties.cs example - working with properties
+            PersonProperties personProperty = new PersonProperties();
+            personProperty.Birthdate = new DateTime(1982, 1, 1);
+            Console.WriteLine(personProperty.Age);
+
          }
 
          static void UseParams()
