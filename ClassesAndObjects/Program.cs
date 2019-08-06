@@ -69,6 +69,11 @@ namespace ClassesAndObjects
             PersonProperties personProperty = new PersonProperties(new DateTime(1982, 1, 1));
             Console.WriteLine(personProperty.Age);
 
+            //HttpCookieIndexer Practice
+            HttpCookieIndexer cookie = new HttpCookieIndexer();
+            cookie["name"] = "Mosh";
+            Console.WriteLine(cookie["name"]);
+
          }
 
          static void UseParams()
